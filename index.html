@@ -253,6 +253,183 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/27/markdown-language/" itemprop="url">
+                  Markdown基本语法说明
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-27T23:13:25+08:00" content="2016-05-27">
+              2016-05-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/实用工具/" itemprop="url" rel="index">
+                    <span itemprop="name">实用工具</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/27/markdown-language/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/27/markdown-language/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><ul>
+<li>方式一：通过在文字下方添加“=”和“-”，===== 表示高阶标题，——— 表示次阶标题。</li>
+<li>方式二：在文字开头加上 “#”，通过“#”数量表示几级标题。（一共只有1~6级标题，1级标题字体最大）</li>
+</ul>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+<li>使用 [TOC] 生成目录。如一开始的目录所示。</li>
+</ul>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li>无序列表：在文字开头添加(<em>, +, and -)实现无序列表。但是要注意在(</em>, +, and -)和文字之间需要添加空格。（建议：一个文档中只是用一种无序列表的表示方式）</li>
+<li>有序列表：使用数字后面跟上句号。比如1. 2. 3.</li>
+</ul>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><ul>
+<li>通过列表标志前面加4个空格或tab键缩进完成。<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>一级无序</span><br><span class="line"><span class="code">	- 二级无序</span></span><br><span class="line"><span class="code">	- 二级无序</span></span><br><span class="line"><span class="bullet">* </span>一级无序</span><br><span class="line"><span class="code">	- 二级无序</span></span><br><span class="line"><span class="code">	- 二级无序</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="引用和注释"><a href="#引用和注释" class="headerlink" title="引用和注释"></a>引用和注释</h3><ul>
+<li>在需要引用的文字前面加上”&gt;”,比如 “&gt; 引用文字 “，（当&gt;和文字之间添加五个blank时，块注释的文字会有变化。）</li>
+<li>“&gt;&gt;” 表示引用里面再套一层引用，依次类推</li>
+</ul>
+<h3 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h3><ul>
+<li>将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来。</li>
+</ul>
+<h3 id="粗体"><a href="#粗体" class="headerlink" title="粗体"></a>粗体</h3><ul>
+<li>将需要设置为斜体的文字两端使用2个“*”或者“_”夹起来</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><ul>
+<li>使用```表示代码块,比如如下代码：</li>
+</ul>
+<p>```bash<br>while [ $k -eq 1 ] ; do<br>　　echo “true”<br>done<br>```<br>显示效果如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> [ <span class="variable">$k</span> <span class="_">-eq</span> 1 ] ; <span class="keyword">do</span> </span><br><span class="line">　　<span class="built_in">echo</span> <span class="string">"true"</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>支持的语言：actionscript, apache, bash, clojure, cmake, coffeescript, cpp, cs, css, d, delphi, django, erlang, go, haskell, html, http, ini, java, javascript, json, lisp, lua, markdown, matlab, nginx, objectivec, perl, php, python, r, ruby, scala, smalltalk, sql, tex, vbscript, xml</li>
+<li>也可以使用 4 空格缩进，再贴上代码，实现相同的的效果 </li>
+<li>非常短的代码片段也即是行内代码，只想高亮语句中的某个函数名或关键字，可以用`blockquote`。（`不是单引号而是左上角的ESC下面~中的`）</li>
+</ul>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><ul>
+<li>这是一个技巧，非语法，可以切换到输入法全角字符，然后打空格实现空格效果，markdown语法本身未提供空格</li>
+</ul>
+<h3 id="链接（Links）"><a href="#链接（Links）" class="headerlink" title="链接（Links）"></a>链接（Links）</h3><p>　Markdown中有两种方式，实现链接，分别为内联方式和引用方式。</p>
+<ul>
+<li>内联方式：<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This is an [<span class="string">example link</span>](<span class="link">http://example.com/</span>).</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>引用方式：<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol">1</span>] than from [<span class="string">Yahoo</span>][<span class="symbol">2</span>] or [<span class="string">MSN</span>][<span class="symbol">3</span>].  </span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">http://google.com/        "Google" </span></span><br><span class="line">[<span class="symbol">2</span>]: <span class="link">http://search.yahoo.com/  "Yahoo Search" </span></span><br><span class="line">[<span class="symbol">3</span>]: <span class="link">http://search.msn.com/    "MSN Search"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="图片（Images）"><a href="#图片（Images）" class="headerlink" title="图片（Images）"></a>图片（Images）</h3><p> 图片的处理方式和链接的处理方式，非常的类似。</p>
+<ul>
+<li><p>内联方式：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt text</span>](<span class="link">/path/to/img.jpg "Title"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>引用方式：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt text</span>][<span class="symbol">id</span>] </span><br><span class="line"> [id]: /path/to/img.jpg "Title"</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h3><ul>
+<li>在空白行下方添加三条“-”横线。（前面讲过在文字下方添加“-”，实现的2级标题）</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/27/linux-std-c-function/" itemprop="url">
                   Linux 标准C语言函数总结
                 </a>
@@ -322,31 +499,141 @@
 
       
         
-          <h2 id="文件操作函数："><a href="#文件操作函数：" class="headerlink" title="文件操作函数："></a>文件操作函数：</h2><pre>
-1. fopen：打开文件：FILE* fopen(const char *name, const char *mod);  
-    返回值：成功：FILE* 失败：NULL
-        其中mod的取值有：
-            r 打开只读文件，该文件必须存在。
-            r+ 打开可读写的文件，该文件必须存在。
-            w 打开只写文件，若文件存在则文件长度清为0，即该文件内容会消失。若文件不存在则建立该文件。
-            w+ 打开可读写文件，若文件存在则文件长度清为零，即该文件内容会消失。若文件不存在则建立该文件。
-            a 以附加的方式打开只写文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾，即文件原先的内容会被保留。（EOF符保留）
-            a+ 以附加方式打开可读写的文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾后，即文件原先的内容会被保留。 （原来的EOF符不保留）
-            还可加入“b”表示二进制文件操作。
-            由此我们使用时，经常使用方法有，
-              r+ 读写，必须存在，文件指针在开始？ 
-              w+ 清空读写，不存在则创建
-              a+ 追加读写，不存在则创建，文件指针在结束
-2. fflush：清空缓冲区写入。int fflush(FILE *stream);  成功：0，失败：EOF
-3. fclose:关闭文件流。int fclose(FILE *stream);              成功：0，失败：EOF
-4. remove：删除文件。 int remove(char *name)； 成功：0
-5. rename:重命名文件。int rename(char *oldname, char *newname);  成功：0
+          
+            <h3 id="文件操作函数："><a href="#文件操作函数：" class="headerlink" title="文件操作函数："></a>文件操作函数：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">1. fopen：打开文件：FILE* fopen(const char *name, const char *mod);  </span><br><span class="line">	返回值：成功：FILE* 失败：NULL</span><br><span class="line">	其中mod的取值有：</span><br><span class="line">	r 打开只读文件，该文件必须存在。</span><br><span class="line">	r+ 打开可读写的文件，该文件必须存在。</span><br><span class="line">	w 打开只写文件，若文件存在则文件长度清为0，</span><br><span class="line">	  即该文件内容会消失。若文件不存在则建立该文件。</span><br><span class="line">	w+ 打开可读写文件，若文件存在则文件长度清为零，</span><br><span class="line">	  即该文件内容会消失。若文件不存在则建立该文件。</span><br><span class="line">	a 以附加的方式打开只写文件。若文件不存在，则会建立该文件，如果文件存在，</span><br><span class="line">	  写入的数据会被加到文件尾，即文件原先的内容会被保留。（EOF符保留）</span><br><span class="line">	a+ 以附加方式打开可读写的文件。若文件不存在，则会建立该文件，如果文件存在，</span><br><span class="line">	  写入的数据会被加到文件尾后，即文件原先的内容会被保留。原来的EOF符不保留）</span><br><span class="line">	还可加入“b”表示二进制文件操作。</span><br><span class="line">	由此我们使用时，经常使用方法有，</span><br><span class="line">	r+ 读写，必须存在，文件指针在开始？ </span><br><span class="line">	w+ 清空读写，不存在则创建</span><br><span class="line">	a+ 追加读写，不存在则创建，文件指针在结束</span><br><span class="line">2. fflush：清空缓冲区写入。int fflush(FILE *stream);  </span><br><span class="line">   成功：0，失败：EOF</span><br><span class="line">3. fclose:关闭文件流。int fclose(FILE *stream);			  </span><br><span class="line">   成功：0，失败：EOF</span><br><span class="line">4. remove：删除文件。 int remove(char *name)； </span><br><span class="line">   成功：0</span><br><span class="line">5. rename:重命名文件。int rename(char *oldname, char *newname);  </span><br><span class="line">   成功：0</span><br></pre></td></tr></table></figure>
+<h3 id="格式化输入输出函数："><a href="#格式化输入输出函数：" class="headerlink" title="格式化输入输出函数："></a>格式化输入输出函数：</h3><pre>
+1. int printf(const char *format, ...);
+2. int sprintf(char *s, char *format,……)；打印到字符串s。
+    返回实际写入字节数。出错返回负数
+    常用场合：.打印整数到字符串 sprintf(s, "%d", a);
+    .打印十进制为十六进制 sprintf(s, "%x", 1234);
+    .控制打印浮点数格式 sprintf(s, "%.3f", 1234.3456);
+    .连接多个字符串 sprintf(s, "%.7s%.5s", "1234","sdfgh");
+    在连接两个字符数组，非字符串时通过制定精度可完成strcat不能完成的工作。 
+    还可以动态制定精度，sprintf(s, "%.*s%.*s", a1, "1234", a2, "sdfgh"),
+    其中a1，a2为动态精度变量，表示最长取字符串中多少长度
+    .打印地址 sprintf(s, "%08u", a);
+3. int fprintf(FILE *stream, const char *format, ...); 按照format格式写入到文件流中。
+4. int scanf(const char *format, ...); 标准输入输入
+5. int fscanf(FILE *stream, const char *format, ...); 文件输入
+6. int sscanf(const char * s, const char *format, ...); 字符串输入
 </pre>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/27/linux-std-c-function/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+
+<h3 id="字符输入-输出函数："><a href="#字符输入-输出函数：" class="headerlink" title="字符输入/输出函数："></a>字符输入/输出函数：</h3><pre>
+1. int fgetc(FILE *stream); 从文件中读出一字符。到文件末尾或出错返回EOF。
+2. int fputc(int c, FILE *stream); 将字符c写入FILE中。出错返回EOF。
+3. int getchar();标准输入读入一个字符。以Enter结束输入，最后的回车符也会放入缓冲区。
+4. int putchar(int c);输出到标准输出。
+5. int ungetc(int c, FILE *stream); 回写到文件 出错返回EOF。
+6. char *fgets(char *s, int n, FILE *stream); 
+    读出最多n-1个字符，或遇到换行符终止存入s，并在*s上后加'\0', 遇到换行符会将换行符写入字符串，并不舍弃。
+    到达文件末尾或出错，返回NULL，可用feof，或ferror判断是哪一种
+7. int fputs(const char *s, FILE *stream);        
+    向指定的文件写入一个字符串（不自动写入'\0'）。成功写入一个字符串后，文件的位置指针会自动后移。
+    成功返回0；否则返回EOR
+8. char *gets(char *s); 
+    从标准输入读入一个输入行到s，并把末尾换行符置换为'\0'，也就是会舍弃换行符。注意s不要溢出。
+    可用feof，或ferror判断是哪一种
+9. size_t fread(void* ptr, size_t size, size_t nobj, FILE *stream);
+    从stream中最多读取size个长度为nobj的对象到ptr中。
+    返回读取的对象个数。若出错需要通过feof或ferror判断原因。
+10. size_t fwrite(const void* ptr, size_t size, size_t nobj, FILE *stream);
+    将ptr中size*nobj个字节的数据写入文件流。
+    返回写入对象个数。若出错需要通过feof或ferror判断原因。
+</pre>
+
+<h3 id="文件定位函数："><a href="#文件定位函数：" class="headerlink" title="文件定位函数："></a>文件定位函数：</h3><h3 id="错误处理函数："><a href="#错误处理函数：" class="headerlink" title="错误处理函数："></a>错误处理函数：</h3><h3 id="字符测试函数：ctype-h"><a href="#字符测试函数：ctype-h" class="headerlink" title="字符测试函数：ctype.h"></a>字符测试函数：ctype.h</h3><pre>
+若为真返回非0值，若为假返回0值。
+1. int isalnum(int c) 是否字母(包括大小写)或数字
+2. int isalpha(int c) 是否字母(包括大小写)
+3. int isdigit(int c) 是否十进制数字
+4. int islower(int c) 是否小写字母
+5. int isupper(int c) 是否大写字母
+</pre>
+
+<h3 id="大小写转换："><a href="#大小写转换：" class="headerlink" title="大小写转换："></a>大小写转换：</h3><pre>
+1. int tolower(int c) 转小写，若c不满足大写，返回c本身
+2. int toupper(int c) 转大写，若c不满足小写，返回c本身
+</pre>
+
+<h3 id="字符串函数：string-h"><a href="#字符串函数：string-h" class="headerlink" title="字符串函数：string.h"></a>字符串函数：string.h</h3><pre>
+下面函数中，变量d，s类型为char *，cd和cs型为const char *， n类型为size_t, c类型为int。
+一般d标识为目的地或返回地，后面s为源
+1. char *strcpy(d,cs)  
+    将cs(包括'\0')复制到d，返回d。 d和cs不可重叠，d要足够大。
+2. char *strncpy(d,cs,n) 
+    最多将cs的n个字符复制到d中。
+    若cs前n个字节不以NULL结尾,则d末尾不会自动加'\0'，需手动加。
+    若cs长度小于n个，则补NULL到d直到n个。                                                        
+3. char *strcat(d,cs)
+    把cs所指字符串的前n个字符添加到d结尾处(覆盖d结尾处的'\0')并添加'\0'.
+4. char *strncat(d,cs,n)
+    把cs所指字符串的前n个字符添加到d结尾处(覆盖d结尾处的'\0')并添加'\0'.
+    若cs前n个字符不以NULL结尾，也会自动在d末尾加NULL
+5. int strcmp(cd,cs)
+    比较cd，cs字符串大小。
+    当cd<cs时，返回值<0 　　="" 当cd="cs时，返回值=0">cs时，返回值>0
+    比如"aaa" < "aaab"
+6. int strncmp(cd,cs,n)
+    比较cd和cs的前n个字符。
+7. char *strchr(cd,c)
+    返回字符c在cd中第一次出现位置的指针，若cd不包含c，则返回NULL
+8. char *strrchr(cd,c)
+    返回字符c在cd中最后一次出现位置的指针，若cd不包含c，则返回NULL
+    若仅出现一次，则strchr和strrchr返回同样的非NULL位置。
+9. char *strstr(cd,cs)
+    返回字符串cs在cd中第一次匹配的位置，若cd不包含cs，则返回NULL
+    依此可以判断cd是否包含cs，以及递归判断从而判断cd包含cs的个数。
+10. strlen(cd)
+    字符串长度
+11. size_t strspn(cd,cs)
+    返回字符串cd开头连续包含字符串cs内的字符数目。
+    比如strspn("Hello World","klleHo");返回5
+12. size_t strcspn(cd,cs)
+    返回字符串cd开头连续不包含字符串cs内的字符数目。
+    比如strspn("Hello World","kl");返回2
+
+下面函数中对应上面的char *变为void *类型，mem函数直接内存操作，与字符串函数相比，不会考虑'\0'的影响。
+13. void *memcpy(d,cs,n)
+    将cs中n字符拷贝到d中，与strncpy相比，一定会拷贝n字符。
+14. void *memmove(d,cs,n)
+    将cs中n字符拷贝到d中，与memcpy相比，d和cs内存重叠时仍能工作正常，但增加了开销。
+    原理为：当源内存的首地址等于目标内存的首地址时，不进行任何拷贝
+            当源内存的首地址大于目标内存的首地址时，实行正向拷贝
+            当源内存的首地址小于目标内存的首地址时，实行反向拷贝
+15. void *memcmp(cd,cs,n) 
+    与strncmp类似，但memcmp一定会比较n个字符，而不受'\0'影响。
+16. void *memchr(cd,c,n)
+    找到c在cd的前n个字符中的第一次匹配，若未找到，返回NULL
+17. void *mem(d,c,n)
+    将d中的前n个字符用c替换，常用于初始化，比如memset(array,0,sizeof(array));
+</cs时，返回值<0></pre>
+
+
+<h3 id="实用函数-stdlib-h"><a href="#实用函数-stdlib-h" class="headerlink" title="实用函数:stdlib.h"></a>实用函数:stdlib.h</h3><pre>
+1. void *malloc(size_t size)
+    分配size个字节的内存，注意分配后最好显式做类型转换
+2. void free(void *p)
+    回收内存
+3. double atof(const char *s)
+    将字符串转化为double类型。
+    atof()会扫描参数s字符串，跳过前面的空格字符，直到遇上数字或正负符号才开始做转换，而再遇到非数字或字符串结束时('\0')才结束转换，并将结果返回。
+    参数s字符串可包含正负号、小数点或E(e)来表示指数部分，如123.456或123e-2。
+4. int atoi(const char *s)
+int atol(const char *s)
+    字符串转换成整数,貌似在发生溢出时，并不设置errno。
+    在发生溢出时貌似只是简单处理，从而不可靠，难以判断，在linux上待验证
+5. strtod(const char *s, char **endp)
+    strtod()会扫描参数s字符串，跳过前面的空格字符，直到遇上数字或正负符号才开始做转换，到出现非数字或字符串结束时('\0')才结束转换，并将结果返回。
+    若endp不为NULL，则会将遇到不合条件而终止的nptr中的字符指针由endp传回。参数s字符串可包含正负号、小数点或E(e)来表示指数部分。如123.456或123e-2。
+6. strtol(const char *s, char **endp, int base)
+    字符串转换成整数，base表示以多少进制解析，比如2，8，10，16，取0则默认以10进制解析，但如果s有前导0x则以16进制解析，有0以8进制解析。
+    在发生上溢或下溢时，会将返回结果置为LONG_MAX或LONG_MIN (limits.h),并设置errno为ERANGE (errno.h)，由此可以判断是否溢出。
+    在转换过程中，若有溢出的风险或需判断溢出，则最好使用strtol函数。
+7. strtoul(const char *s, char **endp, int base)
+    在strtol类似，只是转换为unsigned long类型。溢出时返回ULONG_MAX(limits.h)
+</pre>    
+          
         
       
     </div>
@@ -542,7 +829,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -550,7 +837,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -559,7 +846,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
